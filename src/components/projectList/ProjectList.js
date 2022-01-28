@@ -9,7 +9,7 @@ const ProjectList = () => {
     <div className="pl">
       <div className='pl-text'>
         <h1 className='pl-title'> Works </h1>
-        <p className='pl-desc'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor animi a totam blanditiis! Eaque sint quod expedita sit, delectus sunt.</p>
+        <p className='pl-desc'>Here are some of projects I worked on this past few years while studying on Gordon College.</p>
       </div>
       <div className='pl-list'>
         {projects.map((item) => (

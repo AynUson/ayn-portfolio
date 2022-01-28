@@ -29,9 +29,41 @@
 }
 
 .i-name {
+  flex: 1;
   font-size: 60px;
 }
+.i-git {
+  flex: 1;
+  font-size: 15px;
+  text-decoration: none;
 
+}
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+.i-name-git{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .i-title {
   height: 50px;
   overflow: hidden;
@@ -88,6 +120,26 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+.custom-shape-divider-top-1643356136 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1643356136 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 144px;
+}
+
+.custom-shape-divider-top-1643356136 .shape-fill {
+    fill: #59B256;
 }
 
 @media screen and (max-width: 480px) {
