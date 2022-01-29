@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import './projects.css'
 import Modal from 'react-modal'
 import close from '../../img/close.png'
-const Projects = ({ img, title }) => {
+const Projects = ({ link, img, title, desc, role, tech }) => {
 
-
+  Modal.setAppElement('#root')
   const [modalOpen, setModalOpen] = useState(false)
   const [showModal, setShowModal] = useState(false);
   const openModal = () => {
@@ -40,10 +40,14 @@ const Projects = ({ img, title }) => {
         </a>
       </div>
       <div className='modal'>
-        <Modal isOpen={modalOpen}>
+        <Modal isOpen={modalOpen} onRequestClose={changeStyle}>
           <div className="modal-header modal-header--sticky">
             <span onClick={changeStyle} className="close">&times;</span>
-            <h2>{title}</h2>
+            <div >
+              <h2 >{title}</h2>
+              <a href={link} target="_blank">{link}</a>
+            </div>
+            <p >  Tech used: <i> {tech} </i>&nbsp; | role: <i>{role}</i> </p>
           </div>
           <div className="modal-body">
 
@@ -57,10 +61,10 @@ const Projects = ({ img, title }) => {
               <img src={img.img} className='modal-img' alt="ffff" />
 
             </div>
-            <h3 className='p-modal-desc '>{title}</h3>
+            <h3 className='p-modal-desc '>{desc}</h3>
           </div>
         </Modal>
-      </div>
+      </div >
 
 
     </>
