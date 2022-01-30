@@ -65,7 +65,7 @@ a:active {
   justify-content: center;
 }
 .i-title {
-  /* height: 100px; */
+  height: 100%;
   overflow: hidden;
 }
 

@@ -71,12 +71,12 @@
     height: 20vh;
   }
 }
-.modal{
+/* .modal{
   
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  overflow-y: hidden; 
+  overflow-x: hidden; 
   position: relative;
-}
+} */
 
 .modal-header {
   padding: 2px 16px;
